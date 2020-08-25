@@ -3,7 +3,9 @@
 
   import ClipboardJS from 'clipboard';
   import showdown from 'showdown';
+  import showdownHighlight from 'showdown-highlight';
   const markdown = new showdown.Converter({
+    extensions: [showdownHighlight],
     simplifiedAutoLink: true,
     openLinksInNewWindow: true,
     excludeTrailingPunctuationFromURLs: true,
